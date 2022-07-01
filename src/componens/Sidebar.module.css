@@ -1,0 +1,17 @@
+.sidebar {
+	background-color: coral;
+	height: min-content;
+	padding: 10px;
+	font-size: 24px;
+	border-radius: 0 0 20px 20px;
+
+	grid-area: sidebar;
+	align-self: start;
+}
+
+.sidebar div {
+	margin: 4px;
+	padding: 2px;
+	border-radius: 5px 5px 35px 5px;
+	background-color: rgb(255, 177, 148);
+}
