@@ -1,0 +1,55 @@
+.sidebar {
+	background-color: coral;
+	height: min-content;
+	padding: 10px;
+	font-size: 24px;
+	border-radius: 0 0 20px 20px;
+
+	grid-area: sidebar;
+	align-self: start;
+}
+
+.content {
+	background-color: rgb(109, 194, 140);
+	padding: 10px;
+	font-size: 24px;
+
+	grid-area: content;
+}
+
+.img {
+	width: 100%;
+	height: 170px;
+
+	border-radius: 15px;
+}
+
+.profile-info {
+	display: flex;
+}
+
+.avatar {
+	padding: 20px;
+	width: 150px;
+}
+
+.ava-info {
+	padding-top: 20px;
+}
+
+.post {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid gray;
+}
+
+.container {
+	display: grid;
+	grid-template-areas:
+		'header header'
+		'sidebar content';
+
+	grid-template-columns: 1fr 6fr;
+	grid-template-rows: 100px 1fr;
+	grid-gap: 10px;
+}
