@@ -1,5 +1,5 @@
 .content {
-	background-color: rgb(109, 194, 140);
+	background-color: darkturquoise;
 	padding: 10px;
 	font-size: 24px;
 
@@ -24,10 +24,4 @@
 
 .ava_info {
 	padding-top: 20px;
-}
-
-.post {
-	margin: 20px;
-	padding: 20px;
-	border: 1px solid gray;
 }

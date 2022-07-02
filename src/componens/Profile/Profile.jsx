@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './Profile.module.css';
+import Post from './Post_List/Post/Post';
 
 const Profile = () => {
 	return (
@@ -11,19 +12,21 @@ const Profile = () => {
 			/>
 			<div className={style.profile_info}>
 				<img
-					src="https://findicons.com/files/icons/1072/face_avatars/300/a02.png"
+					src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg"
 					className={style.avatar}
 					alt="Not found"
 				/>
 				<span className={style.ava_info}>
-					Very danger person full of deathfull skills that makes u dead very
-					fast, use his beard as undercover{' '}
+					Here in the future will be insert some personal information given by
+					user
 				</span>
 			</div>
 			<p text-size="26">Posts</p>
-			<div className={style.post}>Post 1</div>
-			<div className={style.post}>Post 2</div>
-			<div className={style.post}>Post 3</div>
+			<Post message="Hey there, here's my first post" likesQty="10" />
+			<Post
+				message="Hey there, what are yours plans for this weekend?"
+				likesQty="19"
+			/>
 		</div>
 	);
 };
